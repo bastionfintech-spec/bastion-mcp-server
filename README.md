@@ -15,7 +15,7 @@ Give your Claude agent real-time crypto market intelligence, autonomous risk man
 [![Claude Code](https://img.shields.io/badge/Claude_Code-Ready-orange?style=for-the-badge)](https://claude.ai)
 [![Claude Desktop](https://img.shields.io/badge/Claude_Desktop-Ready-orange?style=for-the-badge)](https://claude.ai)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/bastionfintech-spec/BASTIONMCP?style=for-the-badge&color=red)](https://github.com/bastionfintech-spec/BASTIONMCP)
+[![GitHub Stars](https://img.shields.io/github/stars/bastionfintech-spec/BASTION-MCP?style=for-the-badge&color=red)](https://github.com/bastionfintech-spec/BASTION-MCP)
 
 ---
 
@@ -807,7 +807,7 @@ Keys are transmitted over HTTPS only, never logged in plaintext, and can be revo
 | Dashboard | [bastionfi.tech/dashboard](https://bastionfi.tech/dashboard) |
 | MCP Endpoint | `https://bastionfi.tech/mcp/sse` |
 | Get API Key | [bastionfi.tech/account](https://bastionfi.tech/account) |
-| GitHub | [github.com/bastionfintech-spec/BASTIONMCP](https://github.com/bastionfintech-spec/BASTIONMCP) |
+| GitHub | [github.com/bastionfintech-spec/BASTION-MCP](https://github.com/bastionfintech-spec/BASTION-MCP) |
 
 ---
 

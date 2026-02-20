@@ -25,7 +25,7 @@ Thank you for your interest in contributing to BASTION! We welcome contributions
 
 ### 1. Fork the Repository
 ```bash
-git clone https://github.com/bastionfintech-spec/BASTIONMCP.git
+git clone https://github.com/bastionfintech-spec/BASTION-MCP.git
 cd BASTIONFI
 ```
 
@@ -102,7 +102,7 @@ Description of the tool.
 
 - Open a GitHub Issue for questions
 - Visit [bastionfi.tech/agents](https://bastionfi.tech/agents) for platform documentation
-- Join the community on [GitHub Discussions](https://github.com/bastionfintech-spec/BASTIONMCP/discussions)
+- Join the community on [GitHub Discussions](https://github.com/bastionfintech-spec/BASTION-MCP/discussions)
 
 ## License
 
