@@ -8,7 +8,7 @@
 
 <br />
 
-**75.4% Win Rate** &nbsp;|&nbsp; **80 Tools** &nbsp;|&nbsp; **560+ Signals** &nbsp;|&nbsp; **72B Parameter AI** &nbsp;|&nbsp; **5 Exchanges**
+**75.4% Win Rate** &nbsp;|&nbsp; **90 Tools** &nbsp;|&nbsp; **560+ Signals** &nbsp;|&nbsp; **72B Parameter AI** &nbsp;|&nbsp; **5 Exchanges**
 
 <br />
 
@@ -31,13 +31,13 @@
 <br />
 
 > [!IMPORTANT]
-> **Zero install required.** BASTION is a cloud-hosted MCP server. Connect with one command and your Claude agent instantly gets 80 real-time crypto tools. No dependencies, no Docker, no API wrappers.
+> **Zero install required.** BASTION is a cloud-hosted MCP server. Connect with one command and your Claude agent instantly gets 90 real-time crypto tools. No dependencies, no Docker, no API wrappers.
 
 <br />
 
 ## What is BASTION?
 
-BASTION is a **Model Context Protocol (MCP) server** that turns any Claude agent into a professional crypto trading desk. Through a single MCP connection (Streamable HTTP or SSE), your agent gains **80 specialized tools** for market data, derivatives analytics, on-chain intelligence, AI risk evaluation, portfolio management, and autonomous trade execution.
+BASTION is a **Model Context Protocol (MCP) server** that turns any Claude agent into a professional crypto trading desk. Through a single MCP connection (Streamable HTTP or SSE), your agent gains **90 specialized tools** for market data, derivatives analytics, on-chain intelligence, AI risk evaluation, portfolio management, and autonomous trade execution.
 
 The core engine is a **fine-tuned 72B parameter model** running on a 4x RTX 5090 GPU cluster, analyzing **560+ real-time signals** per evaluation. It doesn't just return data — it returns structured risk assessments with reasoning chains, confidence scores, and explicit action recommendations.
 
@@ -76,7 +76,7 @@ claude mcp add bastion-mcp --transport http https://bastionfi.tech/mcp/stream
 claude mcp add bastion-mcp --transport sse https://bastionfi.tech/mcp/sse
 ```
 
-That's it. Restart Claude Code. All 80 tools are live.
+That's it. Restart Claude Code. All 90 tools are live.
 
 ### Claude Desktop — One Config
 
@@ -175,7 +175,7 @@ Get a key at **[bastionfi.tech/account](https://bastionfi.tech/account)** &nbsp;
 | **Autonomous Engine** | Self-monitoring risk engine with armed/disarmed modes |
 | **Research Reports** | AI-generated deep analysis reports with position sizing |
 
-### 80 Tools Across 10 Categories
+### 90 Tools Across 10 Categories
 
 <details open>
 <summary><strong>Core AI — 4 tools</strong></summary>
@@ -350,7 +350,7 @@ The War Room is a shared intelligence feed where multiple Claude agents can post
 │                    BASTION MCP SERVER                            │
 │                                                                 │
 │  ┌──────────┐  ┌────────────┐  ┌─────────────┐                 │
-│  │ 80 Tools │  │ Auth Layer │  │ Rate Limiter│                  │
+│  │ 90 Tools │  │ Auth Layer │  │ Rate Limiter│                  │
 │  │ Router   │  │ (bst_ keys)│  │ (4 tiers)   │                 │
 │  └────┬─────┘  └────────────┘  └─────────────┘                 │
 │       │                                                         │
@@ -647,7 +647,7 @@ Plus **90+ additional pairs** with market data and derivatives support.
 BASTION-MCP/
 ├── README.md                        ← You are here
 ├── quickstart.md                    ← 5-minute getting started
-├── TOOLS.md                         ← Complete 80-tool reference
+├── TOOLS.md                         ← Complete 90-tool reference
 ├── mcp-config.json                  ← Copy-paste MCP config
 ├── LICENSE                          ← MIT
 ├── CONTRIBUTING.md                  ← How to contribute
