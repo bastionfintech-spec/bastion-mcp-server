@@ -37,7 +37,7 @@
 
 ## What is BASTION?
 
-BASTION is a **Model Context Protocol (MCP) server** that turns any Claude agent into a professional crypto trading desk. Through a single SSE connection, your agent gains **52 specialized tools** for market data, derivatives analytics, on-chain intelligence, AI risk evaluation, portfolio management, and autonomous trade execution.
+BASTION is a **Model Context Protocol (MCP) server** that turns any Claude agent into a professional crypto trading desk. Through a single MCP connection (Streamable HTTP or SSE), your agent gains **52 specialized tools** for market data, derivatives analytics, on-chain intelligence, AI risk evaluation, portfolio management, and autonomous trade execution.
 
 The core engine is a **fine-tuned 72B parameter model** running on a 4x RTX 5090 GPU cluster, analyzing **560+ real-time signals** per evaluation. It doesn't just return data — it returns structured risk assessments with reasoning chains, confidence scores, and explicit action recommendations.
 
@@ -69,6 +69,10 @@ Claude: [Calls bastion_evaluate_risk, bastion_get_funding_rates, bastion_get_liq
 ### Claude Code — One Command
 
 ```bash
+# Streamable HTTP (recommended)
+claude mcp add bastion-mcp --transport http https://bastionfi.tech/mcp/stream
+
+# Or legacy SSE
 claude mcp add bastion-mcp --transport sse https://bastionfi.tech/mcp/sse
 ```
 
@@ -82,24 +86,40 @@ Add to `claude_desktop_config.json` (<kbd>macOS</kbd> `~/Library/Application Sup
 {
   "mcpServers": {
     "bastion": {
-      "transport": "sse",
+      "type": "streamable-http",
+      "url": "https://bastionfi.tech/mcp/stream"
+    }
+  }
+}
+```
+
+<details>
+<summary>Or use legacy SSE transport</summary>
+
+```json
+{
+  "mcpServers": {
+    "bastion": {
+      "type": "sse",
       "url": "https://bastionfi.tech/mcp/sse"
     }
   }
 }
 ```
 
+</details>
+
 ### Python MCP Client
 
 ```python
 from mcp import ClientSession
-from mcp.client.sse import sse_client
+from mcp.client.streamable_http import streamablehttp_client
 
-async with sse_client("https://bastionfi.tech/mcp/sse") as (read, write):
+# Streamable HTTP (recommended)
+async with streamablehttp_client("https://bastionfi.tech/mcp/stream") as (read, write, _):
     async with ClientSession(read, write) as session:
         await session.initialize()
 
-        # Evaluate risk on a live position
         result = await session.call_tool("bastion_evaluate_risk", {
             "symbol": "BTC",
             "direction": "LONG",
@@ -110,12 +130,27 @@ async with sse_client("https://bastionfi.tech/mcp/sse") as (read, write):
         })
 ```
 
+<details>
+<summary>Legacy SSE client</summary>
+
+```python
+from mcp import ClientSession
+from mcp.client.sse import sse_client
+
+async with sse_client("https://bastionfi.tech/mcp/sse") as (read, write):
+    async with ClientSession(read, write) as session:
+        await session.initialize()
+        result = await session.call_tool("bastion_evaluate_risk", {...})
+```
+
+</details>
+
 ### Authenticated Access
 
 For portfolio, trading, and engine tools — pass your key in the URL:
 
 ```
-https://bastionfi.tech/mcp/sse?api_key=bst_your_key_here
+https://bastionfi.tech/mcp/stream?api_key=bst_your_key_here
 ```
 
 Get a key at **[bastionfi.tech/account](https://bastionfi.tech/account)** &nbsp;|&nbsp; Full walkthrough in **[quickstart.md](quickstart.md)** &nbsp;|&nbsp; Detailed guides in **[`guides/`](guides/)**
