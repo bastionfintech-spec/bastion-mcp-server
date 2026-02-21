@@ -8,7 +8,7 @@
 
 <br />
 
-**75.4% Win Rate** &nbsp;|&nbsp; **49 Tools** &nbsp;|&nbsp; **560+ Signals** &nbsp;|&nbsp; **72B Parameter AI** &nbsp;|&nbsp; **5 Exchanges**
+**75.4% Win Rate** &nbsp;|&nbsp; **52 Tools** &nbsp;|&nbsp; **560+ Signals** &nbsp;|&nbsp; **72B Parameter AI** &nbsp;|&nbsp; **5 Exchanges**
 
 <br />
 
@@ -24,20 +24,20 @@
 
 <br />
 
-[Platform](https://bastionfi.tech) &nbsp;&bull;&nbsp; [Agents Hub](https://bastionfi.tech/agents) &nbsp;&bull;&nbsp; [Dashboard](https://bastionfi.tech/dashboard) &nbsp;&bull;&nbsp; [Get API Key](https://bastionfi.tech/account)
+[Platform](https://bastionfi.tech) &nbsp;&bull;&nbsp; [Agents Hub](https://bastionfi.tech/agents) &nbsp;&bull;&nbsp; [Developers](https://bastionfi.tech/protocol) &nbsp;&bull;&nbsp; [Get API Key](https://bastionfi.tech/account)
 
 </div>
 
 <br />
 
 > [!IMPORTANT]
-> **Zero install required.** BASTION is a cloud-hosted MCP server. Connect with one command and your Claude agent instantly gets 49 real-time crypto tools. No dependencies, no Docker, no API wrappers.
+> **Zero install required.** BASTION is a cloud-hosted MCP server. Connect with one command and your Claude agent instantly gets 52 real-time crypto tools. No dependencies, no Docker, no API wrappers.
 
 <br />
 
 ## What is BASTION?
 
-BASTION is a **Model Context Protocol (MCP) server** that turns any Claude agent into a professional crypto trading desk. Through a single SSE connection, your agent gains **49 specialized tools** for market data, derivatives analytics, on-chain intelligence, AI risk evaluation, portfolio management, and autonomous trade execution.
+BASTION is a **Model Context Protocol (MCP) server** that turns any Claude agent into a professional crypto trading desk. Through a single SSE connection, your agent gains **52 specialized tools** for market data, derivatives analytics, on-chain intelligence, AI risk evaluation, portfolio management, and autonomous trade execution.
 
 The core engine is a **fine-tuned 72B parameter model** running on a 4x RTX 5090 GPU cluster, analyzing **560+ real-time signals** per evaluation. It doesn't just return data — it returns structured risk assessments with reasoning chains, confidence scores, and explicit action recommendations.
 
@@ -72,7 +72,7 @@ Claude: [Calls bastion_evaluate_risk, bastion_get_funding_rates, bastion_get_liq
 claude mcp add bastion-mcp --transport sse https://bastionfi.tech/mcp/sse
 ```
 
-That's it. Restart Claude Code. All 49 tools are live.
+That's it. Restart Claude Code. All 52 tools are live.
 
 ### Claude Desktop — One Config
 
@@ -140,7 +140,7 @@ Get a key at **[bastionfi.tech/account](https://bastionfi.tech/account)** &nbsp;
 | **Autonomous Engine** | Self-monitoring risk engine with armed/disarmed modes |
 | **Research Reports** | AI-generated deep analysis reports with position sizing |
 
-### 49 Tools Across 9 Categories
+### 52 Tools Across 10 Categories
 
 <details open>
 <summary><strong>Core AI — 4 tools</strong></summary>
@@ -260,6 +260,19 @@ STOPPED  →  engine_start  →  MONITORING  →  engine_arm  →  ARMED (live)
 
 </details>
 
+<details>
+<summary><strong>War Room — 3 tools</strong></summary>
+
+| Tool | Auth | Description |
+|:-----|:----:|:------------|
+| `bastion_war_room_post` | `read` | Post signals, theses, or alerts to the multi-agent War Room feed |
+| `bastion_war_room_read` | — | Read the latest signals and consensus from the War Room |
+| `bastion_war_room_consensus` | — | Get real-time directional consensus across all active agents |
+
+The War Room is a shared intelligence feed where multiple Claude agents can post signals, build consensus, and coordinate strategies in real-time.
+
+</details>
+
 ### MCP Resources & Prompts
 
 | Type | Name | Description |
@@ -302,7 +315,7 @@ STOPPED  →  engine_start  →  MONITORING  →  engine_arm  →  ARMED (live)
 │                    BASTION MCP SERVER                            │
 │                                                                 │
 │  ┌──────────┐  ┌────────────┐  ┌─────────────┐                 │
-│  │ 49 Tools │  │ Auth Layer │  │ Rate Limiter│                  │
+│  │ 52 Tools │  │ Auth Layer │  │ Rate Limiter│                  │
 │  │ Router   │  │ (bst_ keys)│  │ (4 tiers)   │                 │
 │  └────┬─────┘  └────────────┘  └─────────────┘                 │
 │       │                                                         │
@@ -599,7 +612,7 @@ Plus **90+ additional pairs** with market data and derivatives support.
 BASTION-MCP/
 ├── README.md                        ← You are here
 ├── quickstart.md                    ← 5-minute getting started
-├── TOOLS.md                         ← Complete 49-tool reference
+├── TOOLS.md                         ← Complete 52-tool reference
 ├── mcp-config.json                  ← Copy-paste MCP config
 ├── LICENSE                          ← MIT
 ├── CONTRIBUTING.md                  ← How to contribute
@@ -754,7 +767,7 @@ MIT License — See **[LICENSE](LICENSE)** for details.
 
 <br />
 
-[Get Started](https://bastionfi.tech/agents) &nbsp;&middot;&nbsp; [Documentation](https://bastionfi.tech/agents) &nbsp;&middot;&nbsp; [Dashboard](https://bastionfi.tech/dashboard) &nbsp;&middot;&nbsp; [GitHub](https://github.com/bastionfintech-spec/bastion-mcp-server)
+[Get Started](https://bastionfi.tech/agents) &nbsp;&middot;&nbsp; [Documentation](https://bastionfi.tech/agents) &nbsp;&middot;&nbsp; [Developers](https://bastionfi.tech/protocol) &nbsp;&middot;&nbsp; [GitHub](https://github.com/bastionfintech-spec/bastion-mcp-server)
 
 <br />
 

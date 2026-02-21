@@ -6,7 +6,7 @@ All notable changes to the BASTION MCP Server will be documented in this file.
 
 ### Added
 - Initial open-source release of BASTION MCP documentation and examples
-- 49 MCP tools across 9 categories
+- 52 MCP tools across 10 categories
 - Setup guides for Claude Code, Claude Desktop, and custom API clients
 - Individual example files for every tool with sample conversations
 - 6 multi-tool workflow templates
@@ -24,6 +24,7 @@ All notable changes to the BASTION MCP Server will be documented in this file.
 - **Portfolio** (7 tools): Positions, balance, exchanges, engine status/history, alerts, session stats
 - **Trading Actions** (6 tools): Emergency exit, partial close, TP/SL management, breakeven, flatten winners
 - **Engine Control** (3 tools): Start, arm, disarm autonomous trading engine
+- **War Room** (3 tools): Multi-agent signal posting, feed reading, directional consensus
 
 ### Infrastructure
 - MCP Server: FastMCP with SSE transport

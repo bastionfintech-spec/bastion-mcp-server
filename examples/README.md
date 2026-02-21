@@ -86,6 +86,12 @@ Autonomous trading engine. Requires `engine` scope API key.
 - [bastion_engine_arm](engine-control/engine-arm.md) — Arm for auto-execution
 - [bastion_engine_disarm](engine-control/engine-disarm.md) — Disarm engine
 
+### War Room — 3 tools
+Multi-agent intelligence feed. Shared signal posting, consensus engine, and coordinated strategy.
+- bastion_war_room_post — Post signals, theses, or alerts to the War Room
+- bastion_war_room_read — Read latest signals and consensus
+- bastion_war_room_consensus — Get real-time directional consensus
+
 ### [Resources](resources/) — 3 resources
 MCP resources that Claude can read automatically.
 - [bastion://status](resources/status.md) — System status
@@ -100,7 +106,7 @@ Pre-built MCP prompts for common workflows.
 
 ---
 
-**Total: 49 tools + 3 resources + 3 prompts = 55 documented endpoints**
+**Total: 52 tools + 3 resources + 3 prompts = 58 documented endpoints**
 
 See also:
 - [Tool Reference Cheatsheet](../TOOLS.md) — All tools in one table

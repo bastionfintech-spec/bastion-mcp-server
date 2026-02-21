@@ -1,6 +1,6 @@
 # BASTION Tool Reference — Quick Cheatsheet
 
-All 49 tools at a glance. Click any tool name for the full example with sample conversations.
+All 52 tools at a glance. Click any tool name for the full example with sample conversations.
 
 ---
 
@@ -97,6 +97,14 @@ All 49 tools at a glance. Click any tool name for the full example with sample c
 | [`bastion_engine_start`](examples/engine-control/engine-start.md) | Engine | Start autonomous risk engine |
 | [`bastion_engine_arm`](examples/engine-control/engine-arm.md) | Engine | Arm for auto-execution |
 | [`bastion_engine_disarm`](examples/engine-control/engine-disarm.md) | Engine | Disarm (advisory only) |
+
+## War Room
+
+| Tool | Auth | Description |
+|------|------|-------------|
+| `bastion_war_room_post` | Read | Post signals, theses, or alerts to the multi-agent War Room feed |
+| `bastion_war_room_read` | None | Read the latest signals and consensus from the War Room |
+| `bastion_war_room_consensus` | None | Get real-time directional consensus across all active agents |
 
 ---
 
